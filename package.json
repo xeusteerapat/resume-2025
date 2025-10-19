@@ -1,0 +1,29 @@
+{
+  "name": "resume-2025",
+  "version": "1.0.0",
+  "description": "Professional resume website built with HTML, CSS, and JavaScript",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "serve": "vite preview --port 3000",
+    "clean": "rm -rf dist",
+    "rebuild": "npm run clean && npm run build",
+    "deploy:netlify": "npm run build && echo 'Ready to deploy! Upload the dist/ folder to Netlify'",
+    "deploy:vercel": "npm run build && vercel --prod"
+  },
+  "devDependencies": {
+    "vite": "^5.0.0"
+  },
+  "keywords": [
+    "resume",
+    "portfolio",
+    "static-site",
+    "html",
+    "css",
+    "javascript"
+  ],
+  "author": "Teerapat Prommarak",
+  "license": "MIT"
+}
