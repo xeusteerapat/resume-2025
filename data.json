@@ -1,23 +1,60 @@
 {
 	"name": "Teerapat Prommarak",
 	"title": "Software Engineer",
-	"skills": [
-		"HTML",
-		"CSS",
-		"Javascript",
-		"Node.js",
-		"React.js",
-		"TypeScript",
-		"Serverless (AWS, Google Cloud)",
-		"MongoDB",
-		"PostgresQL",
-		"MySQL",
-		"Docker",
-		"Kubernetes (Basic)",
-		"ORM Tools (Prisma, TypeORM, Sequelize)",
-		"RESTful APIs",
-		"Version Control with Git (GiHub, Bitbucket)"
-	],
+  "introduction": "Software engineer experienced in designing, developing, and maintaining high-quality applications. Proficient in Node.js, Typescript, Javascript, and modern database technology both SQL and NoSQL. Passionate about problems-solving and delivering solutions that meet the needs of users and stakeholders. Also have experience in cloud technologies such as AWS and Google Cloud Platform. Eager to learn new technology and build innovative and cutting-edge business solutions.",
+	"skills": {
+		"Programming & Frameworks": [
+			"TypeScript",
+			"Javascript",
+			"Node.js",
+			"React.js",
+			"Astro",
+			"Python",
+			"Springboot",
+			"HTML",
+			"CSS"
+		],
+		"Database & Backend": [
+			"MongoDB",
+			"PostgresQL",
+			"MySQL",
+			"Firebase",
+			"RESTful APIs",
+			"ORM Tools (Prisma, TypeORM, Sequelize)"
+		],
+		"Cloud Development & Infrastructure": [
+			"AWS",
+			"Google Cloud",
+			"Docker",
+			"Kubernetes (k8s)",
+			"Linux command line tools",
+			"Terraform"
+		],
+		"DevOps & CI/CD Tools": [
+			"GitHub Actions",
+			"Travis CI",
+			"Circle CI",
+			"Jenkins Pipeline"
+		],
+		"Design Patterns": [
+			"Microservices",
+			"Distributed System"
+		],
+		"AI Tools": [
+			"Cursor",
+			"Copilot",
+			"Windsurf",
+			"Claude code",
+			"Opencode"
+		],
+		"Collaboration Tools": [
+			"Git",
+			"GitHub",
+			"Bitbucket",
+			"Jira",
+			"Confluence"
+		]
+	},
 	"contacts": [
 		{
 			"type": "Email",
