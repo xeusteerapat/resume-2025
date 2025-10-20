@@ -14,7 +14,9 @@ export default defineConfig({
       output: {
         manualChunks: undefined
       }
-    }
+    },
+    // Copy public assets
+    copyPublicDir: true
   },
   
   // Development server configuration
@@ -35,5 +37,8 @@ export default defineConfig({
   // CSS configuration
   css: {
     devSourcemap: true
-  }
+  },
+  
+  // Public directory for static assets
+  publicDir: 'public'
 })
