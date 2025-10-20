@@ -10,6 +10,8 @@ body {
     line-height: 1.4;
     color: #000;
     background-color: #fff;
+    /* Prevent layout shift */
+    overflow-x: hidden;
 }
 
 /* Resume Container */
@@ -19,6 +21,8 @@ body {
     padding: 0.75in;
     background-color: #fff;
     min-height: 11in;
+    /* Prevent layout shift */
+    contain: layout;
 }
 
 /* Header Styles */
@@ -88,6 +92,8 @@ body {
 /* Skills Section */
 .skills-section {
     margin-bottom: 25px;
+    /* Prevent layout shift */
+    contain: layout;
 }
 
 .skills-content {
@@ -97,12 +103,16 @@ body {
 .skills-list {
     list-style-type: none;
     margin-left: 0;
+    /* Prevent layout shift */
+    contain: layout;
 }
 
 .skill-category {
     margin-bottom: 12px;
     display: flex;
     align-items: baseline;
+    /* Prevent layout shift */
+    contain: layout;
 }
 
 .skill-category-title {
@@ -111,12 +121,16 @@ body {
     color: #000;
     margin-right: 8px;
     min-width: fit-content;
+    /* Prevent layout shift */
+    flex-shrink: 0;
 }
 
 .skill-items-text {
     font-size: 16px;
     color: #000;
     line-height: 1.3;
+    /* Prevent layout shift */
+    word-wrap: break-word;
 }
 
 /* Experience Styles */
