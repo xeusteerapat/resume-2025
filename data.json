@@ -1,13 +1,15 @@
 {
 	"name": "Teerapat Prommarak",
 	"title": "Software Engineer",
-  "introduction": "Software engineer experienced in designing, developing, and maintaining high-quality applications. Proficient in Node.js, Typescript, Javascript, and modern database technology both SQL and NoSQL. Passionate about problems-solving and delivering solutions that meet the needs of users and stakeholders. Also have experience in cloud technologies such as AWS and Google Cloud Platform. Eager to learn new technology and build innovative and cutting-edge business solutions.",
+  "introduction": "Software engineer experienced in designing, developing, and maintaining high-quality applications. Proficient in Node.js, Typescript, Javascript, and modern database technology both SQL and NoSQL. Strong communication skills with proven ability to gather requirements and collaborate effectively with cross-functional teams to deliver solutions that meet the needs of users and stakeholders. Remote-first mindset with experience collaborating across EU/UK time zones. Passionate about problem-solving and experienced in cloud technologies such as AWS and Google Cloud Platform. Eager to learn new technology and build innovative and cutting-edge business solutions.",
 	"skills": {
 		"Programming & Frameworks": [
 			"TypeScript",
 			"Javascript",
 			"Node.js",
-			"React.js",
+			"React.js (with State management React Query, Redux)",
+			"Next.js",
+			"GraphQL",
 			"Astro",
 			"Python",
 			"Springboot",
@@ -30,13 +32,13 @@
 			"Linux command line tools",
 			"Terraform"
 		],
-		"DevOps & CI/CD Tools": [
+		"DevOps & CI/CD Tools": [ 
 			"GitHub Actions",
 			"Travis CI",
 			"Circle CI",
 			"Jenkins Pipeline"
 		],
-		"Design Patterns": [
+		"Software Engineering": [
 			"Microservices",
 			"Distributed System"
 		],
@@ -52,7 +54,9 @@
 			"GitHub",
 			"Bitbucket",
 			"Jira",
-			"Confluence"
+			"Confluence",
+			"Notion",
+			"Slack, Discord, MS Team"
 		]
 	},
 	"contacts": [
@@ -71,6 +75,10 @@
 		{
 			"type": "Twitter",
 			"link": "https://twitter.com/xeusteerapat"
+		},
+		{
+			"type": "Bangkok, Thailand (UTC+7)",
+			"link": ""
 		}
 	],
 	"experiences": [
@@ -80,12 +88,11 @@
 			"website": "https://www.krungthai-axa.co.th/en",
 			"dates": "August 2023 - Present",
 			"responsibilities": [
-				"Developed web/mobile applications for over 10,000 insurance agencies using React.js, TypeScript ",
+				"Built web & mobile applications (iOS & Android) for over 10,000 insurance agencies using React.js, TypeScript ",
 				"API development with modern languges and runtime eg. Node.js, Kotling Spring boot",
-				"Utilize Microservices architecture and deploy to Openshift",
+				"Utilize Microservices architecture and deploy to Openshift by adopting best practices for security, testing, and deployment",
 				"Implemented monitoring and logging solutions ensuring the reliability and stability of the microservices ecosystem.",
-				"Adopt best practices for security, testing, and deployment",
-				"Code reviews and provided constructive feedback to improve code quality.",
+				"Code reviews, Mentoring Junior and provided constructive feedback to improve code quality.",
 				"Collaborated with cross-functional teams eg. Business/QA and Product team and participate sprint planning and daily stand-ups",
 				"Operation support, investigate & trouble shooting production issues"
 			]
@@ -93,26 +100,25 @@
 		{
 			"position": "Software Engineer/Senior Software Engineer",
 			"company": "MOHARA",
-			"website": "https://www.mohara.co/",
+			"website": "https://www.mohara.co",
 			"dates": "November 2021 - August 2023",
 			"responsibilities": [
 				"Developed responsive and user-friendly web applications using React.js, TypeScript, and Component Toolkit such as Ant Design, Material-UI",
-				"Backend development with Node.js using popular frameworks like Express.js, Fastify and NestJS along with SQL Database and NoSQL database design",
+				"Built scalable Backend with Node.js using popular frameworks like Express.js, Fastify and NestJS along with SQL Database and NoSQL database design",
 				"Collaborated with cross-functional teams to gather requirements and implement new features.",
 				"Design application architecture with popular practice such as Domain-Driven Design",
 				"Knowledge of best practices for security, testing, and deployment in backend applications",
 				"Conducted code reviews and provided constructive feedback to improve code quality.",
-				"Assisted in troubleshooting and resolving bugs, ensuring smooth application functionality.",
 				"Actively participated in Agile development processes, including sprint planning and daily stand-ups."
 			]
 		},
 		{
 			"position": "Software Engineer",
 			"company": "Vonder (Thailand) Ltd,.",
-			"website": "https://www.vonder.co.th/",
+			"website": "https://www.vonder.co.th",
 			"dates": "July 2020 - October 2021",
 			"responsibilities": [
-				"Developed applications using Node.js and MongoDB leveraging the Serverless Framework.",
+				"Developed applications using Node.js and MongoDB leveraging the AWS Lambda & Serverless Framework.",
 				"Possess a deep understanding of common backend technologies, including REST APIs, databases, and microservices.",
 				"Implemented API development and integrated services with third-party APIs such as LINE Messaging API and Firebase Cloud Messaging.",
 				"Proficient in application development within cloud environments, specifically AWS (Amazon Web Services).",
