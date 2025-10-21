@@ -96,6 +96,13 @@ body {
     margin-bottom: 25px;
     /* Prevent layout shift */
     contain: layout;
+    /* Override any injected styles */
+    display: block !important;
+    flex-direction: unset !important;
+    gap: unset !important;
+    padding-top: 0 !important;
+    margin-top: 0 !important;
+    border-top: none !important;
 }
 
 .skills-content {
