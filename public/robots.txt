@@ -2,7 +2,7 @@ User-agent: *
 Allow: /
 
 # Sitemap
-Sitemap: https://your-resume-url.com/sitemap.xml
+Sitemap: https://curiousdev.in.th/sitemap.xml
 
 # Crawl-delay for respectful crawling
 Crawl-delay: 1

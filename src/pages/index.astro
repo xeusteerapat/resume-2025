@@ -1,0 +1,201 @@
+---
+// Import the JSON data
+import resumeData from '../../data.json';
+---
+
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<meta name="viewport" content="width=device-width" />
+		<meta name="generator" content={Astro.generator} />
+		
+		<title>Teerapat Prommarak - Software Engineer | Full-Stack Developer | React.js, Node.js, TypeScript</title>
+		<meta name="description" content="Experienced Software Engineer with expertise in React.js, Node.js, TypeScript, and cloud technologies. 5+ years building scalable web applications and microservices. Available for opportunities in Bangkok, Thailand.">
+		<meta name="keywords" content="Software Engineer, Full-Stack Developer, React.js, Node.js, TypeScript, JavaScript, AWS, Google Cloud, Microservices, Bangkok, Thailand">
+		<meta name="author" content="Teerapat Prommarak">
+		<meta name="robots" content="index, follow">
+		
+		<!-- Open Graph / Facebook -->
+		<meta property="og:type" content="website">
+		<meta property="og:title" content="Teerapat Prommarak - Software Engineer">
+		<meta property="og:description" content="Experienced Software Engineer with expertise in React.js, Node.js, TypeScript, and cloud technologies.">
+		<meta property="og:url" content="https://curiousdev.in.th">
+		
+		<!-- Twitter -->
+		<meta property="twitter:card" content="summary">
+		<meta property="twitter:title" content="Teerapat Prommarak - Software Engineer">
+		<meta property="twitter:description" content="Experienced Software Engineer with expertise in React.js, Node.js, TypeScript, and cloud technologies.">
+		
+		<!-- Structured Data -->
+		<script type="application/ld+json" set:html={JSON.stringify({
+			"@context": "https://schema.org",
+			"@type": "Person",
+			"name": "Teerapat Prommarak",
+			"jobTitle": "Software Engineer",
+			"description": "Experienced Software Engineer with expertise in React.js, Node.js, TypeScript, and cloud technologies.",
+			"email": "xeus085@gmail.com",
+			"url": "https://curiousdev.in.th",
+			"sameAs": [
+				"https://github.com/xeusteerapat",
+				"https://www.linkedin.com/in/teerapat-prommarak",
+				"https://twitter.com/xeusteerapat"
+			],
+			"address": {
+				"@type": "PostalAddress",
+				"addressLocality": "Bangkok",
+				"addressCountry": "Thailand"
+			},
+			"knowsAbout": [
+				"React.js",
+				"Node.js", 
+				"TypeScript",
+				"JavaScript",
+				"AWS",
+				"Google Cloud",
+				"Microservices",
+				"MongoDB",
+				"PostgreSQL",
+				"Docker",
+				"Kubernetes"
+			],
+			"hasOccupation": {
+				"@type": "Occupation",
+				"name": "Software Engineer",
+				"description": "Full-stack software engineer specializing in web applications and microservices"
+			}
+		})} />
+		
+		<link rel="stylesheet" href="/styles.css">
+	</head>
+	<body>
+		<div class="resume-container">
+			<!-- Header Section -->
+			<header class="header">
+				<h1 class="name">{resumeData.name.toUpperCase()}</h1>
+				<div class="contact-info">
+					{resumeData.contacts.map(contact => {
+						if (contact.type === 'Email') {
+							return <span class="email"><a href={contact.link} aria-label="Email Teerapat Prommarak">{contact.link.replace('mailto:', '')}</a></span>
+						} else if (contact.type.includes('Bangkok')) {
+							return <span class="location">{contact.type}</span>
+						} else {
+							return <span class={contact.type.toLowerCase()}><a href={contact.link} target="_blank" aria-label={`Visit Teerapat Prommarak's ${contact.type} profile`}>{contact.type} Profile</a></span>
+						}
+					}).map((element, index) => 
+						index < resumeData.contacts.length - 1 ? [element, <span class="separator">|</span>] : element
+					)}
+				</div>
+			</header>
+
+			<hr class="divider" />
+
+			<!-- Introduction Section -->
+			<section class="introduction-section">
+				<h2 class="section-title">PROFESSIONAL SUMMARY</h2>
+				<div class="introduction-content">
+					<p>{resumeData.introduction}</p>
+				</div>
+			</section>
+
+			<hr class="divider" />
+
+			<!-- Skills Section -->
+			<section class="skills-section">
+				<h2 class="section-title">TECHNICAL SKILLS</h2>
+				<div class="skills-content">
+					<div class="skills-list">
+						{Object.entries(resumeData.skills).map(([category, skillArray]) => (
+							<div class="skill-category">
+								<h3 class="skill-category-title">{category}:</h3>
+								<span class="skill-items-text">{skillArray.join(', ')}.</span>
+							</div>
+						))}
+					</div>
+				</div>
+			</section>
+
+			<hr class="divider" />
+
+			<!-- Employment Details Section -->
+			<section class="employment-section">
+				<h2 class="section-title">EXPERIENCES</h2>
+				<div id="experiences-container">
+					{resumeData.experiences.map((experience, index) => (
+						<>
+							<div class="experience">
+								<div class="company-header">
+									<h3 class="company-name">{experience.company.toUpperCase()}</h3>
+									<div class="position-date">
+										<span class="position">{experience.position}</span>
+										<span class="date">{experience.dates}</span>
+									</div>
+								</div>
+								<div class="key-achievements">
+									<h4 class="achievements-title">Key Achievements:</h4>
+									<ul class="achievements-list">
+										{experience.responsibilities.map(achievement => (
+											<li>{achievement}</li>
+										))}
+									</ul>
+								</div>
+							</div>
+							{index < resumeData.experiences.length - 1 && <hr class="divider" />}
+						</>
+					))}
+				</div>
+			</section>
+
+			<hr class="divider" />
+
+			<!-- Education Section -->
+			<section class="education-section">
+				<h2 class="section-title">EDUCATION</h2>
+				<div id="education-container">
+					{resumeData.educations.map(education => (
+						<div class="education-item">
+							<div class="education-header">
+								<span class="degree">{education.degree}</span>
+								<span class="education-date">{education.graduationYear}</span>
+							</div>
+							<p class="university">{education.university}</p>
+						</div>
+					))}
+				</div>
+			</section>
+
+			<hr class="divider" />
+
+			<!-- Certifications Section -->
+			<section class="certifications-section">
+				<h2 class="section-title">CERTIFICATIONS</h2>
+				<div class="certifications-list">
+					{resumeData.achievements.map(achievement => (
+						<div class="cert-item">
+							<a href={achievement.link} target="_blank" class="cert-title" aria-label={`View ${achievement.title} certificate`}>{achievement.title}</a>
+						</div>
+					))}
+				</div>
+			</section>
+
+			<hr class="divider" />
+
+			<!-- References Section -->
+			<section class="references-section">
+				<h2 class="section-title">REFERENCES</h2>
+				<p class="references-text">Available upon request.</p>
+			</section>
+
+			<!-- Testimonial Section -->
+			<section class="testimonial-section">
+				<div class="testimonial-placeholder">
+					<strong>Available upon request</strong>
+				</div>
+			</section>
+
+			<div class="page-number">Page 1 of 1</div>
+		</div>
+		
+		<script src="/script.js" is:inline></script>
+	</body>
+</html>
