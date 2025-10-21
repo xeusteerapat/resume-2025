@@ -43,6 +43,12 @@ document.addEventListener('DOMContentLoaded', function() {
         mediaQueryList.addListener(function(mql) {
             if (!mql.matches) {
                 addPrintButton();
+            } else {
+                // Hide print button when printing
+                const existingButton = document.querySelector('button');
+                if (existingButton) {
+                    existingButton.style.display = 'none';
+                }
             }
         });
         
@@ -52,6 +58,22 @@ document.addEventListener('DOMContentLoaded', function() {
     } else {
         addPrintButton();
     }
+    
+    // Also hide button on beforeprint event
+    window.addEventListener('beforeprint', function() {
+        const printButton = document.querySelector('button');
+        if (printButton) {
+            printButton.style.display = 'none';
+        }
+    });
+    
+    // Show button again after printing
+    window.addEventListener('afterprint', function() {
+        const printButton = document.querySelector('button');
+        if (printButton) {
+            printButton.style.display = 'block';
+        }
+    });
 
     // Add hover effects for better interactivity
     setTimeout(() => {
