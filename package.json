@@ -4,17 +4,22 @@
   "description": "Professional resume website built with HTML, CSS, and JavaScript",
   "type": "module",
   "scripts": {
-    "dev": "vite",
-    "build": "vite build",
+    "dev": "npm run copy-data && vite",
+    "dev:watch": "npm run copy-data && concurrently \"npm run watch-data\" \"vite\"",
+    "build": "npm run copy-data && vite build",
     "preview": "vite preview",
     "serve": "vite preview --port 3000",
     "clean": "rm -rf dist",
     "rebuild": "npm run clean && npm run build",
+    "copy-data": "cp data.json public/data.json",
+    "watch-data": "nodemon --watch data.json --exec \"npm run copy-data\"",
     "deploy:netlify": "npm run build && echo 'Ready to deploy! Upload the dist/ folder to Netlify'",
     "deploy:vercel": "npm run build && vercel --prod"
   },
   "devDependencies": {
-    "vite": "^7.1.10"
+    "vite": "^7.1.10",
+    "nodemon": "^3.0.2",
+    "concurrently": "^8.2.2"
   },
   "keywords": [
     "resume",
