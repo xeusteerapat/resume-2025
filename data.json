@@ -16,13 +16,13 @@
 			"HTML",
 			"CSS"
 		],
-		"Database & Backend": [
-			"MongoDB",
+		"Database & Backend Technologies": [
+			"NoSQL (MongoDB, Redis, DynamoDB, Firebase)",
 			"PostgresQL",
 			"MySQL",
-			"Firebase",
+			"ORM Tools (Prisma, TypeORM, Sequelize)",
 			"RESTful APIs",
-			"ORM Tools (Prisma, TypeORM, Sequelize)"
+			"Message Queue (BullMQ, SQS)"
 		],
 		"Cloud Development & Infrastructure": [
 			"AWS",
@@ -30,13 +30,13 @@
 			"Docker",
 			"Kubernetes (k8s)",
 			"Linux command line tools",
-			"Terraform"
+			"IaC Tools (Terraform, Pulumi)"
 		],
 		"DevOps & CI/CD Tools": [ 
 			"GitHub Actions",
 			"Travis CI",
 			"Circle CI",
-			"Jenkins Pipeline"
+			"Jenkins"
 		],
 		"Software Engineering": [
 			"Microservices",
